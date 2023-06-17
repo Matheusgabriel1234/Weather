@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+     <link rel="stylesheet" href="./css/style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="shortcut icon" href="./favicon-16x16.png">
+
+</head>
+<body>
+    <div class="container">
+
+   <div class="form">
+  <h3>Confira o clima de uma cidade:</h3>
+    <div class="form-input">
+   <input type="text" placeholder="insira o nome da cidade" id="city-text">
+   <button id="search">
+
+    <i class="fa-solid fa-magnifying-glass"></i>
+   </button>
+
+    </div>
+   </div>
+   <div id="weather-data">
+    <h2>
+   <i class="fa-solid fa-location-dot"></i>
+ 
+   <span id="#city">(Cidade)</span>
+
+  </h2>
+  <p id="temperature"><span>(graus)</span>&deg;</p>
+
+  <div id="description-container">
+  <p id="description">(céu)</p>
+   <img src="http://openweathermap.org/img/wn/02d.png" alt="Condiçoes do tempo" id="weather-icon">
+
+  </div>
+  <div id="details-container">
+
+    <p id="umidity">
+
+        <i class="fa-solid fa-droplet"></i>
+        <span>(umidade)</span>
+    </p>
+    <p id="wind">
+
+        <i class="fa-solid fa-wind"></i>
+        <span>(velocidade dos ventos)</span>
+    </p>
+
+  </div>
+
+   </div>
+
+
+
+
+    </div>
+
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>
